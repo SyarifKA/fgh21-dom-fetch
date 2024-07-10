@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="/asset/style/style-table.css">
+</head>
+<body>
+    <h1>FORM SURVEY</h1>
+    <section class="container">
+        <form class="data-survey" id="data-survey">
+            <div class="name">
+                <label for="name">Siapa nama Anda?</label>
+                <div>
+                    <input type="text" id="name" name="name" value="">
+                </div>
+            </div>
+            <div class="age">
+                <label for="age">Berapa umur Anda?</label>
+                <div>
+                    <input type="number" id="age" value="" name="age">
+                </div>
+            </div>
+            <div class="gender">
+                <div>Apa jenis kelamin Anda?</div>
+                <div id="gender">
+                    <input type="radio" name="gender" id="male" value="Laki-laki">
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" name="gender" id="female" value="Perempuan">
+                    <label for="female">Perempuan</label>
+                </div>
+            </div>
+            <div class="isSmoke">
+                <div>Apakah Anda perokok?</div>
+                <div id="isSmoke">
+                    <input type="radio" name="smoke" id="yes" value="Ya">
+                    <label for="yes">Ya</label>
+                    <input type="radio" name="smoke" id="no" value="Tidak">
+                    <label for="no">Tidak</label>
+                </div>
+            </div>
+            <div class="variant" id="variant">
+                <div>Jika anda perokok, rokok apa yang pernah Anda coba?</div>
+                <div>
+                    <div>
+                        <input type="checkbox" name="variant" id="brand1" value="Gudang Garam Filter">
+                        <label for="brand1">Gudang Garam Filter</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variant" id="brand2" value="Lucky Strike">
+                        <label for="brand2">Lucky Strike</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variant" id="brand3" value="Marlboro">
+                    <label for="brand3">Marlboro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="variant" id="brand4" value="Esse">
+                        <label for="brand4">Esse</label>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit" value="submit" id="button">Save</button>
+            </div>
+        </form>
+        <hr>
+        <table id="table" class="table">
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Is Respondent smoker?</th>
+                <th>Cigar variant that respondent have try</th>
+            </thead>
+            <tbody id="inputData"></tbody>
+        </table>
+    </section>
+    <!-- <script src="tabel.js"></script> -->
+    <script src="/asset/js/script.table.js"></script>
+</body>
+</html>

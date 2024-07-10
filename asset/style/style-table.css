@@ -1,0 +1,115 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: arial;
+    background-color: #F1F8E8;
+    color: #fff;
+}
+
+h1{
+    color: #55AD9B;
+    text-shadow: 1px 1px 5px #aaaaaa;
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    height: 60%;
+    padding: 30px 50px;
+    border-radius: 15px;
+    background-color: #95D2B3;
+    justify-content: space-between;
+    box-shadow: 10px 10px 15px #aaaaaa;
+}
+
+.container .data-survey{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.container .data-survey .name label{
+    font-weight: bold;
+}
+
+.container .data-survey .name > div > input{
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+    background: #e8e8e8;
+    transition: 0.3s;
+}
+
+.container .data-survey .name > div > input:focus{
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+
+.container .data-survey .age > div > input{
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+    background: #e8e8e8;
+    transition: 0.3s;
+}
+
+.container .data-survey .age > div > input:focus{
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+
+.container .data-survey .age label{
+    font-weight: bold;
+}
+.container .data-survey .gender div:first-child{
+    font-weight: bold;
+}
+.container .data-survey .isSmoke div:first-child{
+    font-weight: bold;
+}
+.container .data-survey .variant > div:first-child{
+    font-weight: bold;
+}
+
+.container .data-survey .button{
+    display: flex;
+    justify-content: center;
+}
+
+.container .data-survey .button button{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: #55AD9B;
+    box-shadow: 2px 2px 5px #aaaaaa;
+}
+
+.container table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    height: 20px;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.container .table{
+    flex: 1;
+    border: 1px solid black;
+    padding-left: 50px;
+    font-size: 14px;
+}
