@@ -6,7 +6,7 @@ const addForm = document.getElementById('myForm')
     const email = event.target.email.value
     const password = event.target.password.value
     if (email === 'admin@gmail.com' && password === '1234') {
-        window.alert('success')
+        window.location = 'survey.html'
     } else {
         window.alert('salah')
      }

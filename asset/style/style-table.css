@@ -3,8 +3,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
     font-family: arial;
     background-color: #F1F8E8;
     color: #fff;
@@ -17,8 +15,9 @@ h1{
 
 .container{
     display: flex;
-    gap: 30px;
-    width: 80%;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
     height: 60%;
     padding: 30px 50px;
     border-radius: 15px;
