@@ -1,14 +1,27 @@
 const addForm = document.getElementById('myForm')
 
 // event disini mengarah ke anak dari form sehingga masing2 input dapat diakses
- addForm.addEventListener('submit', (event) => { 
+
+
+ addForm.addEventListener('submit', async(event) => { 
     event.preventDefault()
     const email = event.target.email.value
     const password = event.target.password.value
-    if (email === 'admin@gmail.com' && password === '1234') {
+    
+     const data = new URLSearchParams()
+     data.append('email', email)
+     data.append('password', password)
+     
+     const response = await fetch('https://st2lww-8888.csb.app/auth/login', {
+         method: 'POST',
+         body: data
+     })
+     const uploadData = await response.json()
+    if (uploadData.success) {
+        window.alert(uploadData.message)
         window.location = 'survey.html'
     } else {
-        window.alert('salah')
+        window.alert(uploadData.message)
      }
      addForm.reset()
 })
