@@ -1,4 +1,82 @@
-body{
+.auth-login{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/asset/image/bg-1.jpg);
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.login{
+    top: 70px;
+    position: relative;
+    background-color: #F1F8E8;
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #aaaaaa;
+}
+
+.login .myForm{
+    width: 50%;
+    height: 300px;
+    background-color: #95D2B3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.login .myForm > div{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: bold;
+}
+.login .myForm > h1{
+    text-align: center;
+    color: #fff;
+}
+.login .myForm > div > input{
+    flex: 60%;
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.login .myForm > div > label{
+    flex: 40%;
+}
+
+.login .myForm > div:last-child{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.login .myForm > div > button{
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FBF3D5;
+    color: #9CAFAA;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #aaaaaa;
+}
+
+.login .myForm > div > button:hover{
+    background-color: #f7eabb;
+}
+
+/* CSS Data Survey */
+.form-survey{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,4 +189,31 @@ h1{
     border: 1px solid black;
     padding-left: 50px;
     font-size: 14px;
+}
+
+.container .table thead{
+    background-color: #55AD9B;
+}
+
+/* Overlay */
+.overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    gap: 10px;
+}
+
+.overlay > div:first-child > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.overlay.hide{
+    display: none;
 }

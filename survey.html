@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
-    <link rel="stylesheet" href="/asset/style/style-table.css">
+    <link rel="stylesheet" href="/asset/style/style.css">
 </head>
-<body>
+<body class="form-survey">
     <h1>FORM SURVEY</h1>
     <section class="container">
         <form class="data-survey" id="data-survey">
@@ -72,10 +72,17 @@
                 <th>Age</th>
                 <th>Gender</th>
                 <th>Is Respondent smoker?</th>
-                <th>Cigar variant that respondent have try</th>
+                <th>Cigar variant that respondent had try</th>
             </thead>
             <tbody id="inputData"></tbody>
         </table>
+    </section>
+
+    <section class="overlay hide">
+        <div>
+            <img src="/asset/image/velociraptor.gif" alt="">
+        </div>
+        <div>Loading...</div>
     </section>
     <!-- <script src="tabel.js"></script> -->
     <script src="/asset/js/script.table.js"></script>

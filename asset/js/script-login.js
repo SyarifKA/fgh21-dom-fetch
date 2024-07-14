@@ -20,8 +20,11 @@ const addForm = document.getElementById('myForm')
     if (uploadData.success) {
         window.alert(uploadData.message)
         window.location = 'survey.html'
+        const overlay = document.getElementsByClassName('overlay').item(0)
+        overlay.classList.toggle('hide')
     } else {
         window.alert(uploadData.message)
+        overlay.classList.toggle('hide')
      }
      addForm.reset()
 })
